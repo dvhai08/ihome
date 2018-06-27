@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addboard.AddBoardActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edtMACAddBoard"
+        android:paddingTop="16dp"
+        android:textAlignment="center"
+        android:hint="Địa chỉ MAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_gravity="center"
+        android:id="@+id/ibSaveActivityAddBoard"
+        android:layout_marginTop="4dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:scaleType="fitStart"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

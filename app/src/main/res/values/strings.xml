@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">iHome</string>
+    <string name="login_butlogin">Đăng nhập</string>
+    <string name="login_error_input_user">Email không hợp lệ</string>
+    <string name="login_error_input_pass">Mật khẩu không hợp lệ</string>
+    <string name="loading">Vui lòng chờ...</string>
+    <string name="authentication_failed">Tài khoản hoặc mật khẩu không đúng</string>
+
+</resources>

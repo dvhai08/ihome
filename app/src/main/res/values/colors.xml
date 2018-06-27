@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#429DDB</color>
+    <color name="colorPrimaryDark">#389dde</color>
+    <color name="colorAccent">#4588b3</color>
+
+    <color name="login_colorPrimary">#23A7D8</color>
+    <color name="login_colorPrimaryDark">#23A7D8</color>
+    <color name="login_colorAccent">#FFFFFF</color>
+    <color name="login_white">#FFFFFF</color>
+    <color name="login_transparent">#00000000</color>
+    <color name="login_gradStart">#19AA8B</color>
+    <color name="login_gradStop">#23A7D8</color>
+</resources>

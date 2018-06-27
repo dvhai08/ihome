@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signup.SignupActivity">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_et_bg"
+                android:textColorHint="@android:color/holo_blue_light"
+                android:textColor="@android:color/holo_blue_light"
+                android:hint="Tên người dùng"
+                android:inputType="textPassword"
+                android:id="@+id/editTextUserNameActivitySignup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_et_bg"
+                android:textColorHint="@android:color/holo_blue_light"
+                android:textColor="@android:color/holo_blue_light"
+                android:hint="Email"
+                android:inputType="textPassword"
+                android:id="@+id/editTextEmailActivitySignup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_et_bg"
+                android:textColorHint="@android:color/holo_blue_light"
+                android:textColor="@android:color/holo_blue_light"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:id="@+id/editTextPasswordActivitySignup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_et_bg"
+                android:textColorHint="@android:color/holo_blue_light"
+                android:textColor="@android:color/holo_blue_light"
+                android:hint="Xác nhận mật khẩu"
+                android:inputType="textPassword"
+                android:id="@+id/editTextPasswordConfirmActivitySignup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="70dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_blue_light"
+                android:background="@drawable/login_btn_bg"
+                android:textAllCaps="false"
+                android:id="@+id/buttonSignupActivitySignup"
+                android:text="Đăng ký"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

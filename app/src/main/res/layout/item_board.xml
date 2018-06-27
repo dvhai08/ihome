@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvNameItemBoardControl"
+            android:layout_marginTop="16dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="Công tắc phòng khách"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBoard"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_below="@+id/llInfo"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_device"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivOut1ItemBoardControl"
+                    android:layout_width="@dimen/output_small_width"
+                    android:layout_height="@dimen/output_small_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_switch_off" />
+
+                <TextView
+                    android:id="@+id/tvOut1ItemBoardControl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thiết bị 1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivOut2ItemBoardControl"
+                    android:layout_width="@dimen/output_small_width"
+                    android:layout_height="@dimen/output_small_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_switch_off" />
+
+                <TextView
+                    android:id="@+id/tvOut2ItemBoardControl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thiết bị 2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivOut3ItemBoardControl"
+                    android:layout_width="@dimen/output_small_width"
+                    android:layout_height="@dimen/output_small_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_switch_off" />
+
+                <TextView
+                    android:id="@+id/tvOut3ItemBoardControl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thiết bị 3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivSettingItemBoardControl"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_setting_edit"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/ivRemoveItemBoardControl"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_remove"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
