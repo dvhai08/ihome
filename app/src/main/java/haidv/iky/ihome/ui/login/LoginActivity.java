@@ -86,6 +86,22 @@ public class LoginActivity extends BaseActivity implements LoginMvpView{
             else
             {
                 showToast("Tài khoản chưa được xác minh.");
+                user.sendEmailVerification()
+                        .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(LoginActivity.this,
+                                            "Verification email sent to your mail",
+                                            Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Log.e(TAG, "sendEmailVerification", task.getException());
+                                    Toast.makeText(LoginActivity.this,
+                                            "Failed to send verification email.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
             }
         } else {
         }

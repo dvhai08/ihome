@@ -35,7 +35,7 @@ import haidv.iky.ihome.viewholder.BoardViewHolder;
 
 public class MainActivity extends BaseActivity implements MainMvpView{
 
-    private  static  final String TAG = "MAIN";
+    private  static  final String TAG = "MainActivity";
 
     private DatabaseReference mDatabase;
 
@@ -63,6 +63,9 @@ public class MainActivity extends BaseActivity implements MainMvpView{
         mRecycler.setLayoutManager(mManager);
 
         showProgressDialog();
+
+        Log.d(TAG, "getUid: " + getUid());
+
         // Set up FirebaseRecyclerAdapter with the Query
         Query deviceListQuery = mDatabase.child(getUid()).child("info");
 
@@ -71,6 +74,12 @@ public class MainActivity extends BaseActivity implements MainMvpView{
                 .build();
 
         mFirebaseAdapter = new FirebaseRecyclerAdapter<Board, BoardViewHolder>(options) {
+
+
+            @Override
+            public void onError(@NonNull DatabaseError error) {
+                Log.d(TAG, "DatabaseError: " + error.toString());
+            }
 
             @Override
             public BoardViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
